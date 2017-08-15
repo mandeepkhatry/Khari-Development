@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Room</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <section>
+            <div id="headerBoard">ClassRoom</div>
+            <div id="tools">
+                <div id="colors">
+                    <button id="white" onclick="changeColor('#ffffff')"></button>
+                    <button id="red" onclick="changeColor('#ff0000')"></button>
+                    <button id="green" onclick="changeColor('#66ff66')"></button>
+                    <button id="yellow" onclick="changeColor('#ffff4d')"></button>
+                    <button id="blue" onclick="changeColor('#4d94ff')"></button>
+                </div>
+                <div id="clearTools">   
+                    <button id="clear" onclick="clearBoard()">Clear</button>
+                  
+                </div>
+            </div>
+            <canvas id="canvas" width="1000px" height="500px"></canvas>
+    </section>
+    <script>var teacher = true; </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/board.js"></script>
+</body>
+</html>
